@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div style="padding: 20px;">
+    <h2 style="color: #008080; text-transform: uppercase; font-weight: bold;">Đăng ký thông tin</h2>
+    <hr />
+
+    <form action="" method="post" style="max-width: 600px;">
+        <h4 style="font-weight: bold; margin-bottom: 15px;">Thông tin sinh viên</h4>
+
+        <!-- Họ và tên -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold;">Họ và tên:</label>
+            <input type="text" name="FullName" placeholder="Nhập họ và tên" style="width: 70%; padding: 6px;" />
+        </div>
+
+        <!-- Email -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold;">Email:</label>
+            <input type="email" name="Email" placeholder="Nhập địa chỉ email" style="width: 70%; padding: 6px;" />
+        </div>
+
+        <!-- Ngày sinh -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold;">Ngày sinh:</label>
+            <input type="date" name="Dob" style="width: 70%; padding: 6px;" />
+        </div>
+
+        <!-- Giới tính -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold;">Giới tính:</label>
+            <input type="radio" name="Gender" value="Nam" checked /> Nam &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Gender" value="Nu" /> Nữ
+        </div>
+
+        <!-- Sở thích -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold; vertical-align: top;">Sở thích:</label>
+            <div style="display: inline-block;">
+                <input type="checkbox" name="Hobbies" value="ThietKeWeb" /> Thiết kế web <br />
+                <input type="checkbox" name="Hobbies" value="LapTrinhCSharp" /> Lập trình C#
+            </div>
+        </div>
+
+        <!-- Lớp -->
+        <div style="margin-bottom: 12px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold;">Lớp:</label>
+            <select name="Class" style="width: 71%; padding: 6px;">
+                <option value="">Chọn lớp</option>
+                <option value="25DH110167">25DH110167 (Cybersecurity)</option>
+                <option value="Other">Lớp khác</option>
+            </select>
+        </div>
+
+        <!-- Ghi chú -->
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 120px; font-weight: bold; vertical-align: top;">Ghi chú:</label>
+            <textarea name="Note" placeholder="Nhập nội dung ghi chú" rows="3" style="width: 70%; padding: 6px;"></textarea>
+        </div>
+
+        <!-- Nút bấm -->
+        <div style="padding-left: 120px;">
+            <button type="submit" style="padding: 6px 20px; background-color: #008080; color: white; border: none; cursor: pointer; font-weight: bold;">Đăng ký</button>
+            <button type="reset" style="padding: 6px 20px; background-color: #ccc; border: none; cursor: pointer; margin-left: 10px;">Nhập lại</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body style="margin:0">
+    <div>
+        <!-- Phần Menu Top -->
+        <div style="background-color:teal; width:100%; height:63px; clear:both">Menu</div>
+
+        <!-- Phần Left (Menu trái / Danh mục sản phẩm) -->
+        <div style="width:30%; height:550px; background-color:antiquewhite; float:left">
+            Left
+        </div>
+
+        <!-- Phần Right (Nội dung thay đổi) -->
+        <div style="width:70%; height:550px; background-color:burlywood; float:right">
+            Right
+            @RenderBody()
+        </div>
+
+        <!-- Phần Footer -->
+        <div style="background-color:teal; width:100%; height:50px; clear:both">Footer</div>
+    </div>
+</body>
+</html>
