@@ -1,0 +1,21 @@
+ext# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio user files
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# NuGet Packages
+[Pp]ackages/
+*.nupkg
+
+# Visual Studio cache/options
+.vs/
+
+# JetBrains Rider
+.idea/
