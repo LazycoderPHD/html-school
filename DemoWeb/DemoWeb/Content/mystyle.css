@@ -1,14 +1,4 @@
-﻿body {
-    margin: 0;
-}
-
-/* masterlayout */
-#div-top {
-    height: 50px;
-    background-color: aquamarine;
-}
-
-#div-main {
+﻿#div-main {
     display: flex;
     flex-direction: row;
 }
@@ -20,20 +10,16 @@
     font-size: 20px;
 }
 
-    #div-left h3 {
-        text-align: center;
-    }
-
 #div-containt {
-    width: 75%;
-    height: 500px;
+    width: 75%; /* BẮT BUỘC giữ nguyên 75% để chia đôi màn hình với div-left */
+    height: auto; /* Chỉ để height là auto để tự động giãn chiều cao theo sản phẩm */
     background-color: antiquewhite;
 }
 
 #div-footer {
     height: 50px;
     background-color: burlywood;
-    bottom: 0px;
     text-align: center;
     padding-top: 25px;
+    clear: both; /* Giúp footer luôn nằm bên dưới các thành phần flex/float */
 }
