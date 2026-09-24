@@ -9,8 +9,8 @@
 }
 
 .box-pro {
-    height: 350px;
-    width: 300px;
+    height: auto;
+    width: auto;
     margin: auto;
     margin-top: 10px;
 }
