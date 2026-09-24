@@ -42,5 +42,10 @@ namespace DemoWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult DangKy()
+        {
+            return View();
+        }
     }
 }

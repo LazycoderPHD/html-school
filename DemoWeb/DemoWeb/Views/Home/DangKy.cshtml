@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_MasterLayout3.cshtml";
+}
+
+<h2>DangKy</h2>
+<div id ="div-form">
+    <h2 style= "text-align:center;">ĐĂNG KÝ TÀI KHOẢN</h2>
+    <form action="#" method="POST" name ="frmDK" style ="margin:50px">
+        <div id="div-thongtin">
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
+                <label for="hoten">Họ tên: </label>
+                <input type="text" name="txtHoten" placeholder="Nguyễn Văn A" />
+                <br />
+
+                <label for="MK">Mật Khẩu: </label>
+                <input type="text" name="txtmk" />
+                <br />
+                <label for="diachi">Địa chỉ:</label>
+                <select name="sltDC">
+                    <option>TP.HCM</option>
+                    <option>BRVT</option>
+                    <option>Hà Nội</option>
+                    <option>Quảng Ninh</option>
+                </select>
+                <br/>
+
+                <label for="email">Email: </label>
+                <input type="email" name="txtemail" />
+                <br/>
+
+                <label for="cannang">Cân nặng: </label>
+                <input type="number" name="txtCN" />
+                <br/>
+
+                <fieldset>
+                    <legend>Sở thích</legend>
+                    <input type="checkbox" name="chkST" value="db" /> Đá banh
+                    <input type="checkbox" name="chkST" value="cl" /> Cầu lông
+                    <input type="checkbox" name="chkST" value="ds" /> Đọc sách
+                    <input type="checkbox" name="chkST" value="xp" /> Xem phim
+                </fieldset>
+                <fieldset>
+                    <legend>Giới tính</legend>
+                    <input type="radio" name="radGT" value="nam" />Nam
+                    <input type="radio" name="radGT" value="nu" />Nữ
+                    <input type="radio" name="radGT" value="khac" />Khác
+                </fieldset>
+                <input type="file" />
+            </fieldset>
+        </div>
+        <div id="div-btn">
+            <input type="submit" value="Gửi" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+
+</div>

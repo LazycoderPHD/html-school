@@ -170,6 +170,7 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Shared\_MasterLayout3.cshtml" />
     <Content Include="Views\Home\TrangChu.cshtml" />
+    <Content Include="Views\Home\DangKy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
