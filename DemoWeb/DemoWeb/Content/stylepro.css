@@ -1,0 +1,36 @@
+﻿body {
+}
+
+/* Product page */
+#div-pro-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-pro {
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.size-img {
+    height: 200px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.box-description {
+    height: 120px;
+    width: auto;
+    background-color: gray;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.margin-des {
+    margin-left: 10px;
+    padding-top: 5px;
+}

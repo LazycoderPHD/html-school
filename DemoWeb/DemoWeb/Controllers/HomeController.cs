@@ -37,5 +37,10 @@ namespace DemoWeb.Controllers
             ViewBag.Title = "Register";
             return View();
         }
+
+        public ActionResult Trangchu()
+        {
+            return View();
+        }
     }
 }
