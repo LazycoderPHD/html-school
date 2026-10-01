@@ -131,6 +131,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap.css" />
     <Content Include="Content\mystyle.css" />
     <Content Include="Content\stylepro.css" />
     <Content Include="favicon.ico" />
@@ -171,6 +172,7 @@
     <Content Include="Views\Shared\_MasterLayout3.cshtml" />
     <Content Include="Views\Home\TrangChu.cshtml" />
     <Content Include="Views\Home\DangKy.cshtml" />
+    <Content Include="Views\Home\DestopComputer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -47,5 +47,10 @@ namespace DemoWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult DestopComputer()
+        {
+            return View();
+        }
     }
 }

@@ -1,25 +1,47 @@
-﻿#div-main {
+﻿body {
+    margin: 0;
+}
+
+/*masterlayout*/
+#div-top {
+    height: 50px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#div-main {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
+    width: auto;
 }
 
 #div-left {
-    width: 25%;
+    width: auto;
     height: auto;
     font-family: Arial;
-    font-size: 20px;
+    font-size: small;
 }
 
+    #div-left h3 {
+        text-align: center;
+    }
+
 #div-containt {
-    width: 75%; /* BẮT BUỘC giữ nguyên 75% để chia đôi màn hình với div-left */
-    height: auto; /* Chỉ để height là auto để tự động giãn chiều cao theo sản phẩm */
+    width: auto;
+    height: auto;
     background-color: antiquewhite;
 }
 
 #div-footer {
     height: 50px;
+    width: 100%;
     background-color: burlywood;
-    text-align: center;
-    padding-top: 25px;
-    clear: both; /* Giúp footer luôn nằm bên dưới các thành phần flex/float */
+    bottom: 0px;
 }
+
+    #div-footer p {
+        text-align: center;
+        left: 50%;
+        padding-top: 15px;
+    }
