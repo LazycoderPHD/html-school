@@ -13,14 +13,16 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-    width: auto;
+    width: 100%;
 }
 
 #div-left {
-    width: auto;
+    width: 200px; /* Cố định chiều rộng menu bên trái cho gọn gàng */
+    min-width: 200px;
     height: auto;
     font-family: Arial;
     font-size: small;
+    background-color: #fff;
 }
 
     #div-left h3 {
@@ -28,9 +30,10 @@
     }
 
 #div-containt {
-    width: auto;
+    flex: 1; /* QUAN TRỌNG: Giúp phần nội dung tự động lấp đầy phần màn hình còn lại bên phải */
     height: auto;
     background-color: antiquewhite;
+    padding: 15px; /* Tạo khoảng cách đệm để các cột sản phẩm không dính sát vào mép */
 }
 
 #div-footer {
@@ -42,6 +45,6 @@
 
     #div-footer p {
         text-align: center;
-        left: 50%;
         padding-top: 15px;
+        margin: 0;
     }
