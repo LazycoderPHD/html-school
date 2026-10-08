@@ -4,6 +4,8 @@ using DemoDB2.Models; // Namespace chứa các Entity model của bạn
 using System.Net;
 using System.Data.Entity;
 
+//DaoNguyenPhat
+
 namespace DemoDB2.Controllers
 {
     public class CategoriesController : Controller
