@@ -14,6 +14,7 @@
                     <p>@Html.DisplayFor(model => pro.NamePro)</p>
                     <p>@Html.DisplayFor(model => pro.Price)</p>
                     <p><input type="submit" value="Buy" /></p>
+                    <a href="/ShoppingCart/AddToCart/@pro.ProductID" class="btn btn-default">Buy</a>
                 </div>
             </div>
         }

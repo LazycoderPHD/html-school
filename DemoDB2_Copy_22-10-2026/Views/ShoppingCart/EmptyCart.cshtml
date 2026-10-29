@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "EmptyCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Giỏ Hàng</h2>
+<p>
+    <a href="@Url.Action("Index", "Product")">Tiếp tục mua hàng</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Hình sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="6" style="text-align:center; color: red;">
+                Chưa có sản phẩm nào trong giỏ hàng!
+            </td>
+        </tr>
+    </tbody>
+</table>
