@@ -24,6 +24,19 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <span>
+                            <a href="@Url.Action("ShowCart", "ShoppingCart")">
+                                <img src="@Url.Content("~/Content/images/cart2.png")" style="height: 30px; width:30px; margin-top:10px;" />
+                            </a>
+                        </span>
+                        @Html.Action("BagCart", "ShoppingCart")
+                    </li>
+                    <li><a href="/LoginUser/RegisterUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="/LoginUser/Index"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="@Url.Action("LogOutUser", "LoginUser")">Logout</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -39,19 +52,5 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/script.js"></script>
-
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            <span>
-                <a href="@Url.Action("ShowCart", "ShoppingCart")">
-                    <img src="@Url.Content("~/Content/images/cart2.png")" style="height: 30px; width:30px; margin-top:10px;" />
-                </a>
-            </span>
-            @Html.Action("BagCart", "ShoppingCart")
-        </li>
-        <li><a href="/LoginUser/RegisterUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="/LoginUser/Index"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="@Url.Action("LogOutUser", "LoginUser")">Logout</a></li>
-    </ul>s
 </body>
 </html>
